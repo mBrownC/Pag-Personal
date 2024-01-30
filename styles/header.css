@@ -31,7 +31,12 @@ body {
     z-index: -1;
     opacity: 0.2;
 }
-
+#main {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 3px 150px; /* Mantén el padding en este elemento si es necesario */
+}
 .header {
     background-color: #44B5FF;
     width: 100%;
