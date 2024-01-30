@@ -19,7 +19,19 @@ body {
     min-height: 100vh;
     counter-reset: item;
     counter-reset: section;
+    position: relative;
 }
+.fondo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.2;
+}
+
 .header {
     background-color: #44B5FF;
     width: 100%;
@@ -32,6 +44,7 @@ body {
     width: 50%;
     min-width: 400px;
 }
+
 .menu ul {
     list-style: none;
     display: flex;
@@ -83,17 +96,17 @@ body {
     width: 100%;
 }
 /* css del main */
-#main{
-    width: 100%;
-    max-width: 1600px;
-    padding: 3px 150px;
-    margin: 0 auto;
-}
+
 #presentation{
     width: 100%;
     min-height: 100vh;
     display: flex;
     align-items: center;
+}
+
+.container_section_information {
+    position: relative;
+    z-index: 1;
 }
 .greeting_profile{
     color: var(--color1);
@@ -201,7 +214,7 @@ body {
     grid-template-columns: 1fr 1fr;
 }
 
-.text_section ul li:before{
+#acercaDe .text_section ul li:before{
     content: "» ";
     color: var(--color1);
     margin-left: 5px;
@@ -216,3 +229,16 @@ body {
 #experiencia .conteiner_description_section{
     grid-template-columns: 1fr;
 }
+
+#experiencia .text_section ul{
+    grid-template-columns: 1fr;
+}
+
+#experiencia .text_section ul li p:before{
+    content: "» ";
+    color: var(--color1);
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+/* seccion trabajos */
