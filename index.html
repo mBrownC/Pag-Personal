@@ -6,31 +6,59 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Miguel Brown</title>
         <link rel="shortcut icon" href="images/logo.png">
-        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/header.css"> 
+        <link rel="stylesheet" href="styles/effect.css">
+        <script src="script/scrip_audio.js"></script>
     </head>
 
     <body>
+
+        <audio id="audioPlayer" autoplay>
+            <source src="audio/Unforgettable_hVB5NUqndAc.mp3" type="audio/mp3">
+            <source src="audio/Black_HD4fSdinGZA.mp3" type="audio/mp3">
+            <!-- Agrega más pistas según sea necesario -->
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+        
+        <div id="audio-controls">
+            <button id="playPauseButton">&#10074;&#10074;</button>
+            <button id="nextTrackButton">&#9658;&#9658;</button>
+        </div>
+
         <img src="images/fondo.jpg" alt="Fondo" class="fondo">
         <div class="app">
             <header class="header">
                 <div class="container_logo">
                     <img src="images/logo.png" alt="Logo" title="Logo">
                 </div>
+
+                <div class="loadership_YJJKP">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
                 <div class="container_navigation">
                     <nav class="menu">
                         <ul>
                             <li>
-                                <a href class="item_menu_link">
+                                <a href="#acercaDe" class="item_menu_link">
                                     acerca de
                                 </a>
                             </li>
                             <li>
-                                <a href class="item_menu_link">
+                                <a href="#experiencia" class="item_menu_link">
                                     experiencia
                                 </a>
                             </li>
                             <li>
-                                <a href class="item_menu_link">
+                                <a href="#trabajos" class="item_menu_link">
                                     trabajos
                                 </a>
                             </li>
@@ -55,7 +83,14 @@
                             <p>
                                 Hi, my name is
                             </p>
+                            <div class="loadership_OFVTK">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
                         </div>
+
                         <div class="name_profile">
                             <h1>
                                 miguel brown
@@ -63,15 +98,28 @@
                         </div>
                         <div class="description_profile">
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit. Amet sint perferendis
-                                explicabo vitae non voluptates, aliquid nostrum
-                                aspernatur, quas sunt libero provident saepe eum
-                                corporis natus quidem. Culpa explicabo
-                                repudiandae commodi earum corporis quod ipsum
-                                rerum debitis quae, blanditiis tempora dolores
-                                voluptas optio iste ex quia facilis accusamus
-                                quasi maxime.
+                                Desarrollador web y administrador de bases de
+                                datos. Me destaco por mi proactividad y
+                                capacidad para resolver problemas complejos.
+                                Domino tecnologías como PHP, JavaScript, MySQL,
+                                Git y Linux. Puedo crear y administrar
+                                aplicaciones y bases de datos personalizadas,
+                                optimizar código y supervisar sistemas para
+                                garantizar su óptimo funcionamiento.
+                                En mi experiencia laboral he desarrollado
+                                aplicaciones internas, automatizado procesos de
+                                respaldo de BBDD y configurado herramientas para
+                                importar/exportar datos eficientemente.
+                                Además, tengo experiencia en soporte técnico,
+                                habiendo trabajado resolviendo problemas en
+                                smartphones y configurando redes. También poseo
+                                excelentes habilidades blandas, obtenidas a
+                                través de experiencias como el voluntariado en
+                                Python Chile.
+                                Mi orientación principal es el backend,
+                                específicamente la administración de bases de
+                                datos y optimización de consultas SQL.
+
                             </p>
                         </div>
                     </div>
@@ -105,7 +153,7 @@
                             </div>
                             <div class="container_img_section">
                                 <div class="img_effect">
-                                    <img src="images/FotoPersonal.png"
+                                    <img src="images/presonalAzul.jpg"
                                         alt="Miguel Brown" title="Miguel Brown">
                                 </div>
                             </div>
@@ -191,17 +239,21 @@
                                 trabajos realizados
                             </h2>
                         </div>
-                        <div class="container_projects_import">
+                        <div class="container_projects_import" id="trabajos">
                             <div class="container_card_project">
                                 <div class="img_card_project">
-                                    <div class="img_effect_project">
-                                        <img src alt="Proyecto 1"
-                                            title="Proyecto 1">
-                                    </div>
+                                    <a href="http://127.0.0.1:5501/index.html">
+                                        <div class="img_effect_project">
+                                            <img
+                                                src="images/portadawebcocacola.png"
+                                                alt="Portada CocaCola"
+                                                title="Portada CocaCola">
+                                        </div>
+                                    </a>
                                 </div>
                                 <div class="description_card_proyect">
-                                    <p>
-                                        proyecto destacado
+                                    <p class="test_project_import">
+                                        Web CocaCola
                                     </p>
                                     <h3 class="name_card_prject">
                                         proyecto 1
@@ -214,6 +266,51 @@
                                             repellat, sit magni quasi cupiditate
                                             atque mollitia dignissimos
                                             asperiores odio voluptatibus?</p>
+                                    </div>
+                                    <div class="container_languages_programing">
+                                        <ul>
+                                            <li>
+                                                html
+                                            </li>
+                                            <li>
+                                                css
+                                            </li>
+                                            <li>
+                                                JavaScript
+                                            </li>
+                                            <li>
+                                                php
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="container_links_project">
+                                        <ul>
+                                            <li>
+                                                <a href>
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="24" height="24"
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="feather feather-activity"><svg
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            width="24"
+                                                            height="24"
+                                                            viewBox="0 0 24 24"
+                                                            fill="none"
+                                                            stroke="currentColor"
+                                                            stroke-width="2"
+                                                            stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                            class="feather feather-github"><path
+                                                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></svg>
+                                                </a>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>

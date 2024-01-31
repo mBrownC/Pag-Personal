@@ -117,7 +117,12 @@ body {
     color: var(--color1);
     font-size: 1.2rem;
     font-weight: 600;
+    
 }
+.greeting_profile p,
+    .greeting_profile .loadership_OFVTK {
+        display: inline-block;
+    }
 .name_profile{
     text-transform: capitalize;
     font-size: 3.5rem;
@@ -162,7 +167,7 @@ body {
 }
 .img_effect{
     width: 250px;
-    height: 250px;
+    height: 280px;
     position: relative;
 }
 
@@ -247,3 +252,60 @@ body {
 }
 
 /* seccion trabajos */
+#trabajos{
+    padding: 10px 0;
+}
+.container_card_project{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.img_effect_project{
+    width: 550px;
+    height: 300px;
+}
+.img_effect_project img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+.description_card_proyect{
+    text-align: right;
+}
+.test_project_import{
+    color: var(--color1);
+    letter-spacing: 0.1em;
+}
+.name_card_prject{
+    margin-top: 5px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.information_card_proyect{
+    background-color: var(--color1);
+    padding: 10px;
+    border-radius: var(--borderRadius);
+    margin-bottom: 10px;
+}
+
+.container_languages_programing ul{
+    list-style: none;
+    display: flex;
+    justify-content: right;
+}
+
+.container_languages_programing ul li{
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin: 0 5px;
+}
+.container_links_project ul{
+    list-style: none;
+    display: flex;
+    justify-content: right;
+}
+.container_links_project ul li{
+    margin: 0 5px;
+}
