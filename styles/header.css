@@ -368,9 +368,20 @@ body {
     left: -20px;
 }
 .container_card_project:nth-child(odd) .description_card_proyect{
-    left: 20px;
+    left: -20px;
 
 }
 .container_card_project:nth-child(even) .description_card_proyect{
-    left: -20px;
+    z-index: 1;
+    left: 20px;
+}
+.container_card_project:nth-child(even) .container_languages_programing ul{
+    justify-content: left;
+}
+.container_card_project:nth-child(even) .container_links_project ul{
+    justify-content: left;
+}
+
+.container_card_project:nth-child(even) .description_card_proyect{
+    text-align: left;
 }
