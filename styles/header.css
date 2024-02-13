@@ -375,10 +375,7 @@ body {
     z-index: 1;
     left: 20px;
 }
-.container_card_project:nth-child(even) .container_languages_programing ul{
-    justify-content: left;
-}
-.container_card_project:nth-child(even) .container_links_project ul{
+.container_card_project:nth-child(even) ul{
     justify-content: left;
 }
 
