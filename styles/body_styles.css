@@ -382,3 +382,109 @@ body {
 .container_card_project:nth-child(even) .description_card_proyect{
     text-align: left;
 }
+
+/* Sección Más Proyectos */
+
+.container_subtitle_cards{
+    width: 100%;
+    display: flex;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: 50px 0;
+    justify-content: center;
+}
+.container_card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.proyect_card{
+    height: 250px;
+    padding: 10px;
+    border: 1px solid var(--color1);
+    border-radius: var(--borderRadius);
+    position: relative;
+    box-shadow: 5px 5px 5px 0 rgba(113, 113, 113, 0.5);
+    transition: 0.3s;
+}
+.proyect_card:hover{
+    transform: translateY(-5px);
+    box-shadow: 8px 8px 8px 0 rgba(9, 9, 9, 0.5);
+    transition: 0.3s;
+}
+.container_top_icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.incon_folder{
+    width: 50px;
+    height: 50px;
+    color: var(--color1);
+}
+.incon_github{
+    text-decoration: none;
+    color: var(--color3);
+    transition: 0.3s ease;
+}
+.incon_github:hover{
+    color: var(--color2);
+    transition: 0.3s;
+    width: 30px;
+    height: 30px;
+}
+.card_name{
+    text-transform: capitalize;
+    margin: 5px 0 10px 0;
+}
+.card_programing{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+.card_programing ul{
+    display: flex;
+    list-style: none;
+}
+.card_programing ul li{
+    margin: 0 5px;
+    letter-spacing: .1rem;
+    font-size: .9rem;
+}
+
+#contacto{
+    padding: 100px 0px;
+    text-align: center;
+}
+
+#contacto .text_title_section::after{
+    display: none;
+}
+
+#contacto .conteiner_description_section{
+    grid-template-columns: 1fr;
+    width: 50%;
+    margin: 0 auto;
+}
+.gif_animaton{
+    width: 200px;
+    border-radius: var(--borderRadius);
+    box-shadow: 5px 5px 5px 0 rgba(113, 113, 113, 0.5);
+}
+/* Footer */
+.footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.container_links_footer{
+    padding: 10px;
+}
+.container_links_footer ul{
+    display: flex;
+    list-style: none;
+}
+.container_links_footer ul li{
+    margin: 0 10px;
+}
