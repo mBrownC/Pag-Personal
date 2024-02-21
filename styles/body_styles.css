@@ -41,10 +41,15 @@ body {
 .header {
     background-color: #44B5FF;
     width: 100%;
+    height: 80px;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
 }
 .container_navigation {
     width: 50%;
@@ -56,6 +61,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+
 }
 .menu ul li {
     counter-increment: item 1;
@@ -131,7 +137,8 @@ body {
 }
 .description_profile{
     width: 90%;
-    
+    text-align: justify;
+
 }
 
 /* seccion acerca de  */
@@ -219,6 +226,8 @@ body {
 
 .text_section p{
     margin-bottom: 10px;
+    text-align: justify;
+
 }
 
 .text_section ul{
@@ -249,11 +258,18 @@ body {
     grid-template-columns: 1fr;
 }
 
+#experiencia .text_section ul li p{
+    display: flex;
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
 #experiencia .text_section ul li p:before{
     content: "» ";
     color: var(--color1);
     margin-left: 5px;
     font-size: 20px;
+    padding: 0 10px;
 }
 
 /* seccion trabajos */
@@ -399,7 +415,7 @@ body {
     gap: 20px;
 }
 .proyect_card{
-    height: 250px;
+    height: 300px;
     padding: 10px;
     border: 1px solid var(--color1);
     border-radius: var(--borderRadius);
@@ -437,6 +453,10 @@ body {
     text-transform: capitalize;
     margin: 5px 0 10px 0;
 }
+.proyect_card .card_details{
+    text-align: justify;
+
+}
 .card_programing{
     position: absolute;
     bottom: 20px;
@@ -473,10 +493,13 @@ body {
 }
 /* Footer */
 .footer{
+    background-color: black;
+    padding-bottom: 15px;
     width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
+    color: white;
 }
 .container_links_footer{
     padding: 10px;
@@ -487,4 +510,74 @@ body {
 }
 .container_links_footer ul li{
     margin: 0 10px;
+}
+.container_links_footer li a{
+    text-decoration: none;
+    color: var(--color2);
+}
+.container_links_footer li a svg:hover{
+    color: var(--color1);
+    transform: translateY(-5px);
+    filter: drop-shadow(4px 4px 4px rgb(255, 255, 255)) ;
+    transition: .2s;
+}
+.container_links_footer li a svg{
+    width: 35px;
+    height: 35px;
+    /* filter: drop-shadow(2px 2px 2px rgba(255, 255, 255, 0.674)); */
+    transition: .2s;
+}
+
+.nombre{
+    font-weight: bold;
+}
+/* css de laterales */
+.container_lateral{
+    padding: 0px 20px;
+    position: fixed;
+    bottom: 50px;
+}
+.container_lateral::after{
+    content: "";
+    width: 2px;
+    height: 100px;
+    display: block;
+    background-color: var(--color1);
+    margin: 0 auto;
+}
+.container_lateral a{
+    color: black;
+    transition: 0.3s ease;
+    filter: drop-shadow(4px 4px 4px var(--color2)) ;
+}
+.container_lateral a:hover{
+    color: var(--color1);
+    transition: .3s ease;
+    font-size: 17px;
+    filter: drop-shadow(5px 5px 5px var(--color1)) ;
+}
+.container_lateral ul{
+    list-style: none;
+}
+.container_lateral ul li{
+    margin: 15px 0;
+}
+.side_left{
+    left: 0;
+}
+.side_left li{
+    transition: .3s;
+}
+.side_left li:hover{
+    transform: translatey(-3px);
+    transition: .3s;
+}
+.side_rigth{
+    right: 0;
+    text-align: center; /* Esto alinea verticalmente los elementos */
+}
+.side_rigth a{
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    text-decoration: none;
 }
